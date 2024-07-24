@@ -1,38 +1,82 @@
+/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-style: bold;
+  text-align: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.calculator {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column ;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.calculator-button {
+  display: flex;
+  background-color: #f2f2f2;
+  justify-content: center;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator-button:hover {
+  background-color: #0fe967;
+}
+
+.calculator-button:active {
+  background-color: #f51212;
+  transform: scale(0.9);
+}
+#square-root{
+  display: flex;
+  justify-content: right;
+  content: bold;
+}
+
+.result-display {
+  position: relative;
+  margin:5px;
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+  color:black;
+  background-color:darkgray;
+  display: flex;
+  justify-content:end;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.button-row {
+  /* color: black; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.button-row button {
+  background-color:darkgrey;
+  color: black;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 24px;
+  border: 1px solid red;
+  border-radius:30% ;
 }
